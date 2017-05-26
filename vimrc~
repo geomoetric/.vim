@@ -6,8 +6,10 @@ source $VIMRUNTIME/vimrc_example.vim
 " autocomplete HTML end tags
 :iabbrev </ </<C-X><C-O>
 
-" Specify a directory for plugins 
+" Specify a directory for plugins (for Neovim: ~/.local/share/nvim/plugged)
 call plug#begin('~/.vim/plugged')
+
+" Make sure you use single quotes
 
 " Shorthand notation; fetches https://github.com/morhetz/gruvbox/
 " gruvbox color scheme
