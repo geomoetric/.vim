@@ -1,54 +1,123 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<!-- ################# META TAGS ########################## -->
-			<!-- This tag defines the width and height of your ad: -->
-			<meta name="ad.size" content="width=300, height=250"/>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>How and Why to Design &middot; by Eric Moe</title>
+    
+    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
 
-			<!-- This tag makes sure the ad will render properly on mobile: -->
-			<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
 
-		<!-- ###################################################### -->
+    <!-- Impress.js stylesheets.-->
+    <link href="css/impress-demo.css" rel="stylesheet" />
+  
+    <style>
+      body, 
+      .slide {
+        font-family: 'Freight', Helvetica, sans-serif;
+        background: #F6F8FC;
+      }
+
+      .slide {
+          border: none;
+          box-shadow: none;
+      }
+      .slide {
+        display: block;
+        width: 1408px;
+        height: 792px;
+      }
+      .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        padding: 1.5% 0;
+        z-index: 1000;
+      }
+    </style>     
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div class="footer">
+  <h3>How and Why to Design &middot; by Eric Moe</h3>
+</div>
+
+<div id="impress">
+
+    <div id="test" style="background:#F8F8F8;" class="step slide" data-x="-3502" data-y="518" data-scale="1">
+    </div>
+
+    <div id="hell" class="step" data-x="-2002" data-y="518"  data-scale="0.75">
+    </div>
+
+    <div id="bad_design" class="step slide" data-x="-2002" data-y="518" data-scale="1" style="opacity: 1;">
+      <img src="img/bad.png"
+             alt="Bad Design"
+             width="100%"
+             height="auto"/>
+    </div>
+
+    <div id="mediocre_design" class="step slide" data-x="-502" data-y="518" data-scale="1">
+      <img src="img/meh.png"
+             alt="Meh Design"
+             width="100%"
+             height="auto"/>
+    </div>
+
+    <div id="color" class="step" data-x="998" data-y="520"  data-scale="0.1">
+    </div>
+
+    <div id="font" class="step" data-x="998" data-y="518"  data-scale="0.5">
+    </div>
+
+   <div class="step slide" data-x="938" data-y="518" data-scale="1" style="opacity: 1;">
+      <object type="image/svg+xml" data="img/des-2.svg" width="100%" height="auto">
+        Your browser does not support SVG
+      </object>
+    </div>
 
 
-		<!-- ################# STYLE / PRESENTATION TAGS ########## -->
-			
-			<!-- This is a link to a google font - you can add these to include a font-style that will work across all browsers! -->
-			<!-- Browse potential fonts you can include in your AdWords Ad at: https://www.google.com/fonts -->
-			<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
 
-			<!-- This link adds the internal stylesheet that helps normalize the formatting of different browsers and formats  -->
-			<link type="text/css" rel="stylesheet" href="google-recommended.css" /> 
+    <!--
+        
+        This is an example of step element being scaled.
+        
+        Again, we use a `data-` attribute, this time it's `data-scale="4"`, so it means that this
+        element will be 4 times larger than the others.
+        From presentation and transitions point of view it means, that it will have to be scaled
+        down (4 times) to make it back to its correct size.
+        
+    -->
+    <!-- <div id="good_design" class="step" data-x="0" data-y="0" data-scale="4"> -->
+    <!--     <span class="try">then you should try</span> -->
+    <!--     <h1>impress.js<sup>*</sup></h1> -->
+    <!--     <span class="footnote"><sup>*</sup> no rhyme intended</span> -->
+    <!-- </div> -->
 
-			<!-- This link adds the internal stylesheet for our ad - it is an empty css file for you to modify -->
-			<link type="text/css" rel="stylesheet" href="style.css" />
-		<!-- ###################################################### -->
 
-		<!-- ################# AdWords Exit ########## -->
-			<!--
-				This script is required to include your own exit:
-				ONLY INCLUDE IT IF YOU ARE DEFINING YOUR OWN EXIT
-			-->
-            <!--<script src="https://tpc.googlesyndication.com/pagead/gadgets/html5/api/exitapi.js"></script>-->		
-            <!-- ###################################################### -->
-		
-			<!-- This script tag links to our ad's internal JavaScript file, which defines the ad's interactivity: -->
-			<script type="text/javascript" src="ad-interactivity.js"></script>
-	</head>
-	<body>
 
-			<!-- your ad goes inside here -->
-			<div class="ad">
-				<div class="h1-background">
-					<h1>
-					HTML5 ads are the future
-					</h1>
-					<img class="company-logo" src="company-logo.png" />
-				</div>
-				<button id="cta">
-				Learn More!
-				</button>
-			</div>
+</div>
 
-	</body>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+}
+</script>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+</body>
 </html>
