@@ -1,4 +1,4 @@
-feat(resume): done
+():
 
 # Using the Angular Commit Message Conventions:
 #
@@ -44,60 +44,29 @@ feat(resume): done
 # Please enter the commit message for your changes. Lines starting
 # with '#' will be ignored, and an empty message aborts the commit.
 #
-# On branch 2017-redesign
-# Your branch is ahead of 'origin/2017-redesign' by 9 commits.
+# On branch master
+# Your branch is ahead of 'origin/master' by 1 commit.
 #   (use "git push" to publish your local commits)
 #
 # Changes to be committed:
-#	modified:   _layouts/home.html
-#	modified:   _sass/_2018-redux.scss
-#	modified:   _site/about/index.html
-#	modified:   _site/archive/index.html
-#	modified:   _site/blog/2016/12/19/semester-review.html
-#	modified:   _site/blog/2017/09/10/graphic-means.html
-#	modified:   _site/blog/2017/09/11/tweet.html
-#	modified:   _site/blog/index.html
-#	modified:   _site/checklist.html
-#	modified:   _site/copyright/index.html
-#	modified:   _site/css/main.css
-#	modified:   _site/featured.html
-#	modified:   _site/geomoetric/index.html
-#	modified:   _site/header.html
-#	modified:   _site/index.html
-#	modified:   _site/portfolio.html
-#	modified:   _site/portfolio/2016/11/01/mac-art.html
-#	modified:   _site/portfolio/2016/11/01/ut-postcard.html
-#	modified:   _site/portfolio/2016/11/10/welcome.html
-#	modified:   _site/portfolio/2016/12/23/austin-acl-type.html
-#	modified:   _site/portfolio/2016/12/23/editorial.html
-#	modified:   _site/portfolio/2016/12/23/reappropriation-grid.html
-#	modified:   _site/portfolio/2016/12/23/society-of-spectacle.html
-#	modified:   _site/portfolio/2016/12/23/turkey-trot.html
-#	modified:   _site/portfolio/2016/12/23/ways-of-seeing.html
-#	modified:   _site/portfolio/2016/12/30/ut-xmas-card.html
-#	modified:   _site/portfolio/2016/12/31/xmas-card.html
-#	modified:   _site/portfolio/2017/01/13/guide-book.html
-#	modified:   _site/portfolio/2017/01/13/life-letters.html
-#	modified:   _site/portfolio/2017/01/13/razor-project.html
-#	modified:   _site/portfolio/2017/01/13/ut-annual-impact.html
-#	modified:   _site/portfolio/2017/01/14/westie.html
-#	modified:   _site/portfolio/2017/03/06/arc.html
-#	modified:   _site/portfolio/2017/04/06/web-experiments.html
-#	modified:   _site/portfolio/2017/04/12/singularity.html
-#	modified:   _site/portfolio/2017/04/16/serial-box.html
-#	modified:   _site/portfolio/2017/08/11/album-cover.html
-#	modified:   _site/portfolio/2017/09/04/cards-against-moe-family.html
-#	modified:   _site/portfolio/2017/09/16/aus-nz.html
-#	modified:   _site/portfolio/2017/09/16/mid-century.html
-#	modified:   _site/portfolio/2017/09/28/dedman.html
-#	modified:   _site/resume/index.html
-#	modified:   _site/sitemap/index.html
-#	modified:   _site/syntax.html
-#	modified:   _site/test.html
-#	modified:   _site/work/index.html
-#	modified:   _site/work/work/page/2/index.html
-#	modified:   _site/work/work/page/3/index.html
-#	modified:   featured.html
-#	modified:   resume.md
-#	modified:   test.md
+#	new file:   .gitignore
+#	modified:   autoload/plug.vim
+#	modified:   plugged/ale
+#	modified:   plugged/gruvbox
+#	modified:   plugged/nerdtree
+#	modified:   plugged/vim-commentary
+#	modified:   vimrc
+#	modified:   vimtmp/%Users%EricMoe%Moelio%.git%COMMIT_EDITMSG
+#	deleted:    vimtmp/2017-08-11-album-cover.md.swp
+#	modified:   vimtmp/COMMIT_EDITMSG~
+#	modified:   vimtmp/index.html~
+#	modified:   vimtmp/vimrc~
+#
+# Untracked files:
+#	autoload/plug.vim.old
+#	plugged/fzf.vim/
+#	plugged/papercolor-theme/
+#	plugged/seoul256.vim/
+#	plugged/vim-px-to-em/
+#	plugged/vim-tmux-navigator/
 #
